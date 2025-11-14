@@ -119,3 +119,11 @@ All colors MUST be HSL.
     scroll-behavior: smooth;
   }
 }
+
+@layer utilities {
+  .hero-bg {
+    background-image: url('/portrait-man-doing-household-chores-participating-cleaning-home.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}

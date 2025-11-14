@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
@@ -22,10 +22,18 @@ const testimonials = [
   },
 ];
 
+const initials = (name: string) =>
+  name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
+    <section id="testimonials" className="py-16 md:py-24 bg-secondary">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             What Our Customers Say
@@ -36,23 +44,36 @@ const Testimonials = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card 
+          {testimonials.map((t, index) => (
+            <Card
               key={index}
-              className="border-border bg-card"
+              className="border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-hover)]"
             >
               <CardContent className="p-6">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
+                {/* Header: Avatar + Name/Location */}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="h-12 w-12 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold">
+                    {initials(t.name)}
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-semibold text-card-foreground truncate">{t.name}</p>
+                    <p className="text-sm text-muted-foreground truncate">{t.location}</p>
+                  </div>
+                </div>
+
+                {/* Rating row */}
+                <div className="flex items-center gap-2 mb-3" aria-label={`${t.rating} out of 5 stars`}>
+                  <span className="sr-only">{t.rating} out of 5 stars</span>
+                  {[...Array(t.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                   ))}
+                  <span className="text-sm text-muted-foreground">{t.rating}.0</span>
                 </div>
-                <p className="text-card-foreground mb-6 italic">
-                  "{testimonial.text}"
-                </p>
-                <div className="border-t border-border pt-4">
-                  <p className="font-bold text-card-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+
+                {/* Quote */}
+                <div className="relative">
+                  <Quote className="absolute -top-2 -left-2 h-5 w-5 text-accent/40" />
+                  <p className="text-card-foreground italic pl-4">"{t.text}"</p>
                 </div>
               </CardContent>
             </Card>
@@ -61,6 +82,7 @@ const Testimonials = () => {
       </div>
     </section>
   );
-};
+}
+;
 
 export default Testimonials;

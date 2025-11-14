@@ -22,12 +22,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(/portrait-man-doing-household-chores-participating-cleaning-home.jpg)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+        className="absolute inset-0 z-0 hero-bg"
       >
         <div className="absolute inset-0 bg-black bg-opacity-60" />
       </div>
@@ -48,7 +43,7 @@ const Hero = () => {
                 {item.label}
               </a>
             ))}
-            <button className="text-white hover:text-accent transition-colors">
+            <button aria-label="Search" className="text-white hover:text-accent transition-colors">
               <Search className="w-5 h-5" />
             </button>
             <Button
@@ -60,25 +55,20 @@ const Hero = () => {
           </nav>
         </header>
       
-      <div className="container mx-auto px-4 sm:px-8">
+      <div className="container mx-auto px-4 sm:px-8 py-16 md:py-24">
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
             <Clock className="h-4 w-4 text-accent" />
-            <span className="text-sm font-medium text-primary-foreground">Available 24/7 for Emergencies</span>
+            <span className="text-sm font-medium text-primary-foreground">24/7 • 20–30 min ETA • Licensed & Insured</span>
           </div>
 
-          <div className="flex items-center gap-2 mb-6">
-            <h2 className="text-accent text-xl md:text-2xl font-medium">Welcome To Locksmite</h2>
-            <Lock className="w-6 h-6 text-accent" />
-          </div>
-          
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-            <span className="text-white">Locked Out? </span>
-            <span className="text-accent">We're Here 24/7.</span>
+            <span className="text-white">Locked out?</span>
+            <span className="text-accent"> Fast, damage‑free entry.</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl">
-            Fast, reliable locksmith services across Melbourne. Your security is our priority.
+            City‑wide Melbourne coverage, transparent pricing, full warranty.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -91,15 +81,6 @@ const Hero = () => {
                 <Phone className="h-6 w-6" />
                 Call Now: 03 6316 1113
               </a>
-            </Button>
-            
-            <Button 
-              onClick={scrollToContact}
-              size="lg"
-              variant="outline"
-              className="bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground border-primary-foreground/30 font-semibold text-lg h-14 px-8"
-            >
-              Book Now
             </Button>
           </div>
         </div>

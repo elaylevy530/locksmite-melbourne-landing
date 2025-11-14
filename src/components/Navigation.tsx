@@ -1,50 +1,57 @@
-import { Phone, Key } from "lucide-react";
+import { Phone, Lock, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-200 shadow-sm">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto pl-1 pr-3 md:px-4">
+        <div className="flex items-center h-20 justify-start md:justify-between gap-2">
           <div className="flex items-center space-x-3">
-            <div className="flex items-center gap-1.5">
-              <Key className="h-8 w-8 text-gray-800 stroke-[1.5]" />
-              <Key className="h-8 w-8 text-gray-800 stroke-[1.5]" />
+            <div className="hidden md:flex items-center gap-1.5" aria-hidden="true">
+              <Lock className="h-8 w-8 text-gray-800 stroke-[1.5]" />
+              <ShieldCheck className="h-8 w-8 text-gray-800 stroke-[1.5]" />
             </div>
-            <div className="flex flex-col leading-tight">
+            <div className="flex md:hidden items-center">
+              <img 
+                src="/צילום מסך 2025-11-13 152515.png" 
+                alt="Google reviews rating" 
+                className="h-[72px] object-contain"
+              />
+            </div>
+            <div className="hidden md:flex flex-col leading-tight">
               <span className="text-xs font-semibold text-gray-800 uppercase tracking-wide">YOUR LOCAL</span>
               <span className="text-xs font-bold text-gray-900 uppercase tracking-tight">LOCKSMITH</span>
               <span className="text-xs font-semibold text-gray-800 uppercase tracking-wide">24/7</span>
             </div>
           </div>
           
-          <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-2">
-              <img 
-                src="/google.png" 
-                alt="Google" 
-                className="h-6 w-6 object-contain"
-              />
-              <span className="text-sm font-medium text-gray-700">5-Star Google Reviews</span>
-            </div>
-            
-            <div className="hidden lg:flex items-center">
+          <div className="flex items-center gap-2 md:gap-5 lg:gap-6 ml-2 md:ml-0">
+            <div className="hidden md:flex items-center">
               <img 
                 src="/צילום מסך 2025-11-13 152515.png" 
-                alt="Screenshot" 
-                className="h-20 object-contain"
+                alt="Google reviews rating" 
+                className="h-12 sm:h-16 lg:h-20 object-contain"
               />
+            </div>
+            
+            <div
+              className="flex items-center rounded-full bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 text-[11px] font-medium sm:px-2.5 sm:py-1 sm:text-xs shrink-0"
+              aria-label="Open now"
+            >
+              <span className="h-2 w-2 rounded-full bg-green-500 mr-2" aria-hidden="true" />
+              Open Now
             </div>
             
             <Button 
               asChild
-              size="lg"
-              className="bg-accent hover:bg-green-hover text-accent-foreground font-semibold"
+              className="h-12 w-12 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground ml-2 md:ml-0"
             >
-              <a href="tel:0363161113" className="flex items-center gap-2">
+              <a 
+                href="tel:0363161113" 
+                aria-label="התקשר עכשיו 03 6316 1113" 
+                className="flex items-center justify-center"
+              >
                 <Phone className="h-5 w-5" />
-                <span className="hidden sm:inline">Call Now:</span>
-                <span>03 6316 1113</span>
               </a>
             </Button>
           </div>

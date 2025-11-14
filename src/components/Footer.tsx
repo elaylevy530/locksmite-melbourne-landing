@@ -2,9 +2,9 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-primary text-primary-foreground py-16 md:py-24">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
@@ -36,12 +36,19 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Business Hours</h3>
-            <div className="space-y-2 text-primary-foreground/80">
-              <p className="font-semibold text-accent">Emergency Service: 24/7</p>
-              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-              <p>Saturday: 9:00 AM - 4:00 PM</p>
-              <p>Sunday: Emergency Only</p>
+            <h3 className="text-lg font-bold mb-4">Payments & Hours</h3>
+            <div className="space-y-4 text-primary-foreground/80">
+              <div className="flex items-center gap-2 text-sm">
+                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Visa</span>
+                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Mastercard</span>
+                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Contactless</span>
+              </div>
+              <div className="space-y-2">
+                <p className="font-semibold text-accent">Emergency Service: 24/7</p>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Emergency Only</p>
+              </div>
             </div>
           </div>
         </div>
