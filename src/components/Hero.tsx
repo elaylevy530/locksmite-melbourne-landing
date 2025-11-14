@@ -20,13 +20,13 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      <div 
+    <section id="hero" className="relative min-h-[100svh] flex items-center justify-center overflow-hidden pt-24 sm:pt-32">
+      <div
         className="absolute inset-0 z-0 hero-bg"
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
       </div>
-      
+
       <div className="relative z-10 w-full">
         <header className="absolute -top-80 left-0 right-0 flex items-center justify-center px-4 sm:px-8 py-2">
           <nav className="hidden lg:flex items-center gap-6 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
@@ -54,46 +54,46 @@ const Hero = () => {
             </Button>
           </nav>
         </header>
-      
-      <div className="container mx-auto px-4 sm:px-8 py-16 md:py-24">
-        <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+
+      <div className="container mx-auto px-5 sm:px-8 py-12 md:py-24">
+        <div className="max-w-4xl mx-auto text-center sm:text-left">
+          <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-full px-3 py-2 mb-6 sm:mb-8 shadow-lg animate-fade-in">
             <Clock className="h-4 w-4 text-accent" />
-            <span className="text-sm font-medium text-primary-foreground">24/7 • 20–30 min ETA • Licensed & Insured</span>
+            <span className="text-xs sm:text-sm font-medium text-white">24/7 • 20–30 min ETA • Licensed & Insured</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-            <span className="text-white">Locked out?</span>
-            <span className="text-accent"> Fast, damage‑free entry.</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-tight animate-slide-up">
+            <span className="text-white block mb-2">Locked out?</span>
+            <span className="text-accent block">Fast, damage‑free entry.</span>
           </h1>
-          
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl">
+
+          <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 sm:mb-10 max-w-2xl mx-auto sm:mx-0 animate-slide-up-delay">
             City‑wide Melbourne coverage, transparent pricing, full warranty.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-slide-up-delay-2">
+            <Button
               asChild
               size="lg"
-              className="bg-accent hover:bg-green-hover text-accent-foreground font-bold text-lg h-14 px-8"
+              className="bg-accent hover:bg-green-hover text-accent-foreground font-bold text-base sm:text-lg h-14 sm:h-16 px-6 sm:px-8 shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
             >
-              <a href="tel:0363161113" className="flex items-center gap-3">
-                <Phone className="h-6 w-6" />
-                Call Now: 03 6316 1113
+              <a href="tel:0363161113" className="flex items-center justify-center gap-3">
+                <Phone className="h-5 w-5 sm:h-6 sm:w-6" />
+                <span className="whitespace-nowrap">Call Now: 03 6316 1113</span>
               </a>
             </Button>
           </div>
         </div>
       </div>
       </div>
-      
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-10">
-        <div className="w-12 h-1 bg-accent rounded-full"></div>
-        <div className="w-12 h-1 bg-white bg-opacity-50 rounded-full"></div>
-        <div className="w-12 h-1 bg-white bg-opacity-50 rounded-full"></div>
+
+      <div className="absolute bottom-8 sm:bottom-12 left-1/2 transform -translate-x-1/2 flex gap-2 sm:gap-3 z-10">
+        <div className="w-8 sm:w-12 h-1 bg-accent rounded-full animate-pulse"></div>
+        <div className="w-8 sm:w-12 h-1 bg-white/50 rounded-full"></div>
+        <div className="w-8 sm:w-12 h-1 bg-white/50 rounded-full"></div>
       </div>
-      
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10" />
+
+      <div className="absolute bottom-0 left-0 right-0 h-24 sm:h-32 bg-gradient-to-t from-background to-transparent z-10" />
     </section>
   );
 };
