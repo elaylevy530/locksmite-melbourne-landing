@@ -68,7 +68,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-base md:text-xl lg:text-2xl text-primary-foreground/90 mb-6 md:mb-8 max-w-2xl">
-            City‑wide Melbourne coverage, transparent pricing, full warranty.
+            City‑wide Melbourne coverage, transparent pricing, quick response.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">

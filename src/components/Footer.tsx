@@ -42,12 +42,11 @@ const Footer = () => {
                 <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Visa</span>
                 <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Mastercard</span>
                 <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Contactless</span>
+                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">bank transfer</span>
+                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">efpos</span>
               </div>
               <div className="space-y-2">
                 <p className="font-semibold text-accent">Emergency Service: 24/7</p>
-                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                <p>Saturday: 9:00 AM - 4:00 PM</p>
-                <p>Sunday: Emergency Only</p>
               </div>
             </div>
           </div>

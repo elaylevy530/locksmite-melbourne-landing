@@ -11,15 +11,7 @@ const faqs = [
   },
   {
     q: "What payment methods do you accept?",
-    a: "We accept major cards (Visa, Mastercard), contactless payments, and cash.",
-  },
-  {
-    q: "Do you offer warranty on parts and labor?",
-    a: "Absolutely. We provide a warranty on both parts and workmanship. Details vary by product—ask our technician on site.",
-  },
-  {
-    q: "Can you replace car keys on-site?",
-    a: "Yes. For most vehicles, we can cut and program replacement keys on-site.",
+    a: "We accept major cards (Visa, Mastercard, bank transfer, efpos), contactless payments, and cash.",
   },
 ];
 
