@@ -75,10 +75,10 @@ const AboutSection = (props: Props) => {
             {/* Image side */}
             <div className="relative order-2 lg:order-2">
               <div className="absolute top-0 left-12 w-full h-full border-4 border-accent rounded-lg transform translate-x-4 -translate-y-4 z-0" aria-hidden="true"></div>
-              
+
               <div className="relative z-10 bg-white rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/צילום מסך 2025-11-13 153802.png" 
+                <img
+                  src="/צילום מסך 2025-11-13 153802.png"
                   alt="Locksmith technician on site assisting a customer"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -105,4 +105,3 @@ const AboutSection = (props: Props) => {
 };
 
 export default AboutSection;
-

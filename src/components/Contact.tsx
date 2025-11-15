@@ -45,7 +45,7 @@ const Contact = () => {
               <p className="text-muted-foreground mt-1">Available 24/7 for emergencies</p>
             </div>
           </div>
-          
+
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
               <Mail className="h-6 w-6 text-accent" />
@@ -58,7 +58,7 @@ const Contact = () => {
               <p className="text-muted-foreground mt-1">We'll respond within 24 hours</p>
             </div>
           </div>
-          
+
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
               <MapPin className="h-6 w-6 text-accent" />
@@ -69,14 +69,14 @@ const Contact = () => {
               <p className="text-muted-foreground mt-1">Serving all suburbs across Melbourne</p>
             </div>
           </div>
-          
+
           <Card className="border-accent/30 bg-accent/5">
             <CardContent className="p-6">
               <h3 className="font-bold text-lg text-foreground mb-2">Emergency Service</h3>
               <p className="text-muted-foreground mb-4">
                 Locked out? Don't wait! Call us now for immediate assistance.
               </p>
-              <Button 
+              <Button
                 asChild
                 size="lg"
                 className="w-full bg-accent hover:bg-green-hover text-accent-foreground font-bold"
