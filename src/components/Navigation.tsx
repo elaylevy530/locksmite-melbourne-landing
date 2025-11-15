@@ -12,33 +12,70 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-200 shadow-sm">
       <div className="container mx-auto pl-1 pr-3 md:px-4">
-        <div className="flex flex-col gap-1 py-2">
-          <div className="flex items-center h-16 justify-start md:justify-between gap-2">
-            <div className="flex items-center space-x-3">
+        {/* Mobile: logo/text + Google reviews + Open Now + phone button */}
+        <div className="flex items-center justify-between py-2.5 sm:hidden gap-2 px-2">
+          <div className="flex items-center gap-2 min-w-0 flex-1 max-w-[38%]">
+            <Lock className="h-6 w-6 text-gray-800 stroke-[1.5] shrink-0" />
+            <div className="flex flex-col leading-tight min-w-0">
+              <span className="text-[10px] font-semibold text-gray-800 uppercase tracking-wide">YOUR LOCAL</span>
+              <span className="text-[10px] font-bold text-gray-900 uppercase tracking-tight">LOCKSMITH 24/7</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <div className="flex items-center shrink-0">
+              <img 
+                src="/צילום מסך 2025-11-13 152515.png" 
+                alt="Google Reviews" 
+                className="h-16 object-contain"
+              />
+            </div>
+            
+            <div
+              className="flex items-center rounded-full bg-green-100 text-green-800 border border-green-200 px-2.5 py-1 text-[10px] font-medium shrink-0 whitespace-nowrap"
+              aria-label="Open now"
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500 mr-1.5 shrink-0" aria-hidden="true" />
+              Open Now
+            </div>
+            
+            <Button 
+              asChild
+              className="h-11 w-11 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground shrink-0"
+            >
+              <a 
+                href="tel:0363161113" 
+                aria-label="התקשר עכשיו 03 6316 1113" 
+                className="flex items-center justify-center"
+              >
+                <Phone className="h-5 w-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+
+        {/* Desktop / tablet: full header */}
+        <div className="hidden sm:flex items-center justify-between gap-2 md:gap-4 py-2">
+          {/* Left: logo + text */}
+          <div className="flex items-center gap-1.5 md:gap-2">
             <div className="hidden md:flex items-center gap-1.5" aria-hidden="true">
               <Lock className="h-8 w-8 text-gray-800 stroke-[1.5]" />
               <ShieldCheck className="h-8 w-8 text-gray-800 stroke-[1.5]" />
             </div>
-            <div className="flex md:hidden items-center">
-              <img 
-                src="/צילום מסך 2025-11-13 152515.png" 
-                alt="Google reviews rating" 
-                className="h-[72px] object-contain"
-              />
-            </div>
-            <div className="hidden md:flex flex-col leading-tight">
+            <div className="flex flex-col leading-tight">
               <span className="text-xs font-semibold text-gray-800 uppercase tracking-wide">YOUR LOCAL</span>
               <span className="text-xs font-bold text-gray-900 uppercase tracking-tight">LOCKSMITH</span>
               <span className="text-xs font-semibold text-gray-800 uppercase tracking-wide">24/7</span>
             </div>
           </div>
-          
-          <div className="flex items-center gap-2 md:gap-5 lg:gap-6 ml-2 md:ml-0">
-            <div className="flex items-center">
+
+          {/* Right: Google reviews + status + call button */}
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className="hidden lg:flex items-center">
               <img 
                 src="/צילום מסך 2025-11-13 152515.png" 
-                alt="Google reviews rating" 
-                className="h-12 sm:h-16 lg:h-20 object-contain"
+                alt="Google Reviews" 
+                className="h-20 object-contain"
               />
             </div>
             
@@ -52,7 +89,7 @@ const Navigation = () => {
             
             <Button 
               asChild
-              className="h-12 w-12 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground ml-2 md:ml-0"
+              className="h-11 w-11 sm:h-12 sm:w-12 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground"
             >
               <a 
                 href="tel:0363161113" 
@@ -63,52 +100,6 @@ const Navigation = () => {
               </a>
             </Button>
           </div>
-        </div>
-
-        {/* Nav links row */}
-        <div className="flex items-center gap-4 overflow-x-auto pb-2 md:pb-3 text-sm font-medium text-gray-700">
-          <button
-            type="button"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="whitespace-nowrap hover:text-black"
-          >
-            Home
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollTo("services")}
-            className="whitespace-nowrap hover:text-black"
-          >
-            Services
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollTo("about")}
-            className="whitespace-nowrap hover:text-black"
-          >
-            About
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollTo("why-choose-us")}
-            className="whitespace-nowrap hover:text-black"
-          >
-            Why Choose Us
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollTo("testimonials")}
-            className="whitespace-nowrap hover:text-black"
-          >
-            Testimonials
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollTo("contact")}
-            className="whitespace-nowrap hover:text-black"
-          >
-            Contact
-          </button>
         </div>
       </div>
     </nav>
