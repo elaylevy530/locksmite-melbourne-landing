@@ -12,16 +12,8 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-200 shadow-sm">
       <div className="container mx-auto pl-1 pr-3 md:px-4">
-        {/* Mobile: logo/text + Google reviews + Open Now + phone button */}
-        <div className="flex items-center justify-between py-2.5 sm:hidden gap-2 px-2">
-          <div className="flex items-center gap-2 min-w-0 flex-1 max-w-[38%]">
-            <Lock className="h-6 w-6 text-gray-800 stroke-[1.5] shrink-0" />
-            <div className="flex flex-col leading-tight min-w-0">
-              <span className="text-[10px] font-semibold text-gray-800 uppercase tracking-wide">YOUR LOCAL</span>
-              <span className="text-[10px] font-bold text-gray-900 uppercase tracking-tight">LOCKSMITH 24/7</span>
-            </div>
-          </div>
-
+        {/* Mobile: Google reviews + Open Now + phone button */}
+        <div className="flex items-center justify-start py-2.5 sm:hidden gap-2 pl-4 pr-2">
           <div className="flex items-center gap-2 shrink-0">
             <div className="flex items-center shrink-0">
               <img 
@@ -41,7 +33,7 @@ const Navigation = () => {
             
             <Button 
               asChild
-              className="h-11 w-11 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground shrink-0"
+              className="h-11 w-11 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground shrink-0 ml-3"
             >
               <a 
                 href="tel:0363161113" 
