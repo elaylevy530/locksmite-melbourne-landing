@@ -48,9 +48,9 @@ const Services = () => {
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-3 md:mb-4">Our Services</h2>
           <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Professional locksmith solutions for every security need in Melbourne
+            Professional locksmith services whenever you need them
           </p>
-          <div className="mt-2 md:mt-3 text-xs md:text-sm text-muted-foreground">24/7 • Avg arrival 20–30 min • Licensed & Insured</div>
+          <div className="mt-2 md:mt-3 text-xs md:text-sm text-muted-foreground">24/7 • Avg arrival 15-20 min • Licensed & Insured</div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">

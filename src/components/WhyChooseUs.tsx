@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
           </div>
           <div className="flex items-center justify-center gap-2 text-sm">
             <Clock className="h-4 w-4 text-accent" />
-            <span>20–30 min ETA</span>
+            <span>15-20 min ETA</span>
           </div>
           <div className="flex items-center justify-center gap-2 text-sm">
             <Shield className="h-4 w-4 text-accent" />

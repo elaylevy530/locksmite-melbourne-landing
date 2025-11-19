@@ -38,7 +38,7 @@ const AboutSection = (props: Props) => {
                 </div>
                 <div className="flex items-center gap-1.5 md:gap-2 text-xs md:text-sm text-muted-foreground">
                   <Clock className="h-3 w-3 md:h-4 md:w-4 text-accent" />
-                  <span>20–30 min ETA</span>
+                  <span>15-20 min ETA</span>
                 </div>
                 <div className="flex items-center gap-1.5 md:gap-2 text-xs md:text-sm text-muted-foreground">
                   <Shield className="h-3 w-3 md:h-4 md:w-4 text-accent" />

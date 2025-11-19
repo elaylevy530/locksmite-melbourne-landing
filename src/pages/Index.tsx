@@ -7,6 +7,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Map from "@/components/Map";
+import AreasServed from "@/components/AreasServed";
 import Footer from "@/components/Footer";
 import TrustBar from "@/components/TrustBar";
 import FAQ from "@/components/FAQ";
@@ -26,6 +27,7 @@ const Index = () => {
       <AssociatedBrands />
       <Contact />
       <Map />
+      <AreasServed />
       <Footer />
 
       <div className="fixed right-4 bottom-[calc(env(safe-area-inset-bottom)+1rem)] z-50 sm:hidden">

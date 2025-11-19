@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Lock } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const brands = [
   {
@@ -21,6 +28,18 @@ const brands = [
   {
     name: "Schlage",
     src: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Schlage_logo.svg",
+  },
+  {
+    name: "BRAVA",
+    src: ""
+  },
+  {
+    name: "carbina",
+    src: ""
+  },
+  {
+    name: "eufy",
+    src: ""
   },
 ];
 
@@ -45,20 +64,99 @@ const AssociatedBrands = () => {
           </p>
         </div>
 
-        {/* Logos grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-12">
-          {brands.map((b) => (
-            <div key={b.name} className="rounded-lg border border-border bg-card p-6 flex flex-col items-center justify-center h-32">
-              <img
-                src={b.src}
-                alt={`${b.name} logo`}
-                className="max-h-10 w-auto object-contain opacity-90"
-                loading="lazy"
-                decoding="async"
-              />
-              <span className="mt-3 text-sm text-muted-foreground">{b.name}</span>
-            </div>
-          ))}
+        {/* Logos carousel */}
+        <div className="relative mb-8 md:mb-12">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary text-center mb-4 md:mb-6">Our Brands</h3>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-7xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {brands.map((b) => (
+                <CarouselItem key={b.name} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                  <div className="rounded-lg border border-border bg-card p-3 md:p-6 flex flex-col items-center justify-center h-auto">
+                    {b.name === 'Schlage' && (
+                      <img
+                        src="/Schlage.png"
+                        alt="Schlage product"
+                        className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    {b.name === 'Lockton' && (
+                      <img
+                        src="/Lockton.png"
+                        alt="Lockton product"
+                        className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    {b.name === 'Yale' && (
+                      <img
+                        src="/Yale.png"
+                        alt="Yale product"
+                        className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    {b.name === 'Samsung' && (
+                      <img
+                        src="/Samsung.png"
+                        alt="Samsung product"
+                        className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    {b.name === 'BRAVA' && (
+                      <img
+                        src="/BRAVA.png"
+                        alt="BRAVA product"
+                        className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    {b.name === 'ServiceSeeking' && (
+                      <img
+                        src="/ServiceSeeking.png"
+                        alt="ServiceSeeking product"
+                        className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    {b.name === 'carbina' && (
+                      <img
+                        src="/carbina.png"
+                        alt="carbina product"
+                        className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    {b.name === 'eufy' && (
+                      <img
+                        src="/eufy.png"
+                        alt="eufy product"
+                        className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-1 md:-left-12 h-8 w-8 md:h-10 md:w-10" />
+            <CarouselNext className="right-1 md:-right-12 h-8 w-8 md:h-10 md:w-10" />
+          </Carousel>
         </div>
 
         {/* Section CTA */}

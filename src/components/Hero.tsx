@@ -59,7 +59,7 @@ const Hero = () => {
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-3 py-1.5 md:px-4 md:py-2 mb-4 md:mb-6">
             <Clock className="h-3 w-3 md:h-4 md:w-4 text-accent" />
-            <span className="text-xs md:text-sm font-medium text-primary-foreground">24/7 • 20–30 min ETA • Licensed & Insured</span>
+            <span className="text-xs md:text-sm font-medium text-primary-foreground">24/7 • 15-20 min ETA • Licensed & Insured</span>
           </div>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-8 leading-tight">
