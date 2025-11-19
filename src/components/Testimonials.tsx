@@ -18,7 +18,7 @@ const testimonials = [
     name: "Emma Thompson",
     location: "St Kilda, VIC",
     rating: 5,
-    text: "Lost my car keys and was stranded. These guys came to my rescue quickly and made me a new key on the spot. Lifesavers!",
+    text: "Had new locks installed at home—fast, friendly, and very professional. The locks feel secure and the price was fair. Highly recommended!",
   },
 ];
 

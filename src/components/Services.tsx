@@ -23,7 +23,7 @@ const services = [
     icon: Shield,
     title: "Security Systems",
     description:
-      "Professional security system installation including smart locks, CCTV, and access control systems.",
+      "Professional security system installation including smart locks.",
     badges: ["Commercial"],
     bullets: ["Smart locks", "Access control"],
   },

@@ -54,7 +54,6 @@ const AboutSection = (props: Props) => {
               <ul className="space-y-1.5 md:space-y-2">
                 <li className="flex items-center gap-2 text-sm md:text-base text-muted-foreground"><Check className="h-3 w-3 md:h-4 md:w-4 text-accent shrink-0" /> Damage-free door opening</li>
                 <li className="flex items-center gap-2 text-sm md:text-base text-muted-foreground"><Check className="h-3 w-3 md:h-4 md:w-4 text-accent shrink-0" /> Cylinder replacement & smart locks</li>
-                <li className="flex items-center gap-2 text-sm md:text-base text-muted-foreground"><Check className="h-3 w-3 md:h-4 md:w-4 text-accent shrink-0" /> Car keys: cut & program on-site</li>
                 <li className="flex items-center gap-2 text-sm md:text-base text-muted-foreground"><Check className="h-3 w-3 md:h-4 md:w-4 text-accent shrink-0" /> Warranty on parts & labor</li>
               </ul>
 

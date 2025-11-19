@@ -19,12 +19,12 @@ const Navigation = () => {
               <img 
                 src="/צילום מסך 2025-11-13 152515.png" 
                 alt="Google Reviews" 
-                className="h-16 object-contain"
+                className="h-[68px] object-contain"
               />
             </div>
             
             <div
-              className="flex items-center rounded-full bg-green-100 text-green-800 border border-green-200 px-2.5 py-1 text-[10px] font-medium shrink-0 whitespace-nowrap"
+              className="flex items-center rounded-full bg-green-100 text-green-800 border border-green-200 px-2.5 py-1 text-[10.5px] font-medium shrink-0 whitespace-nowrap"
               aria-label="Open now"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-green-500 mr-1.5 shrink-0" aria-hidden="true" />
