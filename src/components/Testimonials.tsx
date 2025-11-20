@@ -80,14 +80,9 @@ const Testimonials = () => {
                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-full">
                   <Card className="border-border bg-card transition-all duration-300">
                     <CardContent className="p-6">
-                      {/* Header: Avatar + Name */}
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="h-12 w-12 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold">
-                          {initials(t.name)}
-                        </div>
-                        <div className="min-w-0">
-                          <p className="font-semibold text-card-foreground truncate">{t.name}</p>
-                        </div>
+                      {/* Header: Name */}
+                      <div className="mb-4">
+                        <p className="font-semibold text-card-foreground">{t.name}</p>
                       </div>
 
                       {/* Rating row */}
@@ -122,14 +117,9 @@ const Testimonials = () => {
               className="border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-hover)]"
             >
               <CardContent className="p-6">
-                {/* Header: Avatar + Name */}
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="h-12 w-12 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold">
-                    {initials(t.name)}
-                  </div>
-                  <div className="min-w-0">
-                    <p className="font-semibold text-card-foreground truncate">{t.name}</p>
-                  </div>
+                {/* Header: Name */}
+                <div className="mb-4">
+                  <p className="font-semibold text-card-foreground">{t.name}</p>
                 </div>
 
                 {/* Rating row */}
