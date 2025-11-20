@@ -36,15 +36,18 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Payments & Hours</h3>
             <div className="space-y-4 text-primary-foreground/80">
-              <div className="flex items-center gap-2 text-sm">
-                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Visa</span>
-                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Mastercard</span>
-                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">Contactless</span>
-                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">bank transfer</span>
-                <span className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground">efpos</span>
+              <div>
+                <p className="text-sm font-semibold mb-2 md:mb-3">Accepted Payment Methods:</p>
+                <div className="flex flex-wrap items-center gap-2 text-xs md:text-sm">
+                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">Visa</span>
+                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">Mastercard</span>
+                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">Contactless</span>
+                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">Bank Transfer</span>
+                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">EFTPOS</span>
+                </div>
               </div>
               <div className="space-y-2">
-                <p className="font-semibold text-accent">Emergency Service: 24/7</p>
+                <p className="font-semibold text-accent text-sm md:text-base">Emergency Service: 24/7</p>
               </div>
             </div>
           </div>
