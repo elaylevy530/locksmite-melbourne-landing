@@ -1,24 +1,53 @@
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
-    location: "Richmond, VIC",
+    name: "Mark T.",
     rating: 5,
-    text: "Locked myself out at 2am and they arrived within 20 minutes! Professional, friendly, and incredibly fast service. Highly recommend Locksmite!",
+    text: "Called him after my front door lock jammed. Arrived quicker than expected and fixed it on the spot. Honest bloke, solid workmanship.",
   },
   {
-    name: "David Chen",
-    location: "Melbourne CBD",
+    name: "Jessica P.",
     rating: 5,
-    text: "Had them install a new security system for my business. Outstanding work and very reasonable pricing. The team was punctual and thorough.",
+    text: "Had all the locks in my new unit replaced. Super professional, clean work, fair price. Feels good having the place properly secured now.",
   },
   {
-    name: "Emma Thompson",
-    location: "St Kilda, VIC",
+    name: "Daniel H.",
     rating: 5,
-    text: "Had new locks installed at home—fast, friendly, and very professional. The locks feel secure and the price was fair. Highly recommended!",
+    text: "Locked myself out at 11pm. He showed up fast and opened the door without any damage. Absolute legend.",
+  },
+  {
+    name: "Emma R.",
+    rating: 5,
+    text: "Installed two deadbolts and repaired an old sliding door lock. Friendly, efficient, and the job looks great. Highly recommend.",
+  },
+  {
+    name: "Liam S.",
+    rating: 5,
+    text: "Great communication, fair pricing, and he fixed a tricky lock two other locksmiths couldn't sort out. Couldn't be happier.",
+  },
+  {
+    name: "Sarah M.",
+    rating: 5,
+    text: "Needed a few internal locks repaired and one replaced. He explained everything, worked clean, and the results were perfect.",
+  },
+  {
+    name: "Oliver W.",
+    rating: 5,
+    text: "Fast response and very professional. He rekeyed all my door locks after I moved in. Smooth job and really dependable service.",
+  },
+  {
+    name: "Chloe D.",
+    rating: 5,
+    text: "He helped me with a stuck back door lock that I'd been dealing with for months. Quick fix, great attitude, and very reasonably priced.",
   },
 ];
 
@@ -43,21 +72,63 @@ const Testimonials = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Mobile: Carousel */}
+        <div className="md:hidden">
+          <Carousel className="w-full max-w-sm mx-auto">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {testimonials.map((t, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full">
+                  <Card className="border-border bg-card transition-all duration-300">
+                    <CardContent className="p-6">
+                      {/* Header: Avatar + Name */}
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="h-12 w-12 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold">
+                          {initials(t.name)}
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-semibold text-card-foreground truncate">{t.name}</p>
+                        </div>
+                      </div>
+
+                      {/* Rating row */}
+                      <div className="flex items-center gap-2 mb-3" aria-label={`${t.rating} out of 5 stars`}>
+                        <span className="sr-only">{t.rating} out of 5 stars</span>
+                        {[...Array(t.rating)].map((_, i) => (
+                          <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+                        ))}
+                        <span className="text-sm text-muted-foreground">{t.rating}.0</span>
+                      </div>
+
+                      {/* Quote */}
+                      <div className="relative">
+                        <Quote className="absolute -top-2 -left-2 h-5 w-5 text-accent/40" />
+                        <p className="text-card-foreground italic pl-4">"{t.text}"</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
+        </div>
+
+        {/* Desktop: Grid */}
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, index) => (
             <Card
               key={index}
               className="border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-hover)]"
             >
               <CardContent className="p-6">
-                {/* Header: Avatar + Name/Location */}
+                {/* Header: Avatar + Name */}
                 <div className="flex items-center gap-4 mb-4">
                   <div className="h-12 w-12 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold">
                     {initials(t.name)}
                   </div>
                   <div className="min-w-0">
                     <p className="font-semibold text-card-foreground truncate">{t.name}</p>
-                    <p className="text-sm text-muted-foreground truncate">{t.location}</p>
                   </div>
                 </div>
 
