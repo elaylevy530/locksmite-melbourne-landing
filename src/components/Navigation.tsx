@@ -17,14 +17,18 @@ const Navigation = () => {
           <div className="flex items-center gap-2 shrink-0">
             <div className="flex items-center shrink-0">
               <img 
-                src="/צילום מסך 2025-11-13 152515.png" 
+                src="/צילום מסך 2025-11-23 150544.png"
                 alt="Google Reviews" 
-                className="h-[68px] object-contain"
+                className="h-[72px] object-contain"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                style={{ imageRendering: 'crisp-edges' }}
               />
             </div>
             
             <div
-              className="flex items-center rounded-full bg-green-100 text-green-800 border border-green-200 px-2.5 py-1 text-[10.5px] font-medium shrink-0 whitespace-nowrap"
+              className="flex items-center rounded-full bg-green-100 text-green-800 border border-green-200 px-3 py-1.5 text-xs font-medium shrink-0 whitespace-nowrap ml-3"
               aria-label="Open now"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-green-500 mr-1.5 shrink-0" aria-hidden="true" />
@@ -33,7 +37,7 @@ const Navigation = () => {
             
             <Button 
               asChild
-              className="h-11 w-11 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground shrink-0 ml-8"
+              className="h-11 w-11 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground shrink-0 ml-12"
             >
               <a 
                 href="tel:0363161113" 
