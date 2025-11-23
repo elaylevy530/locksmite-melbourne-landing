@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60 text-sm">
-          <p>&copy; {new Date().getFullYear()} Locksmite Locksmiths. All rights reserved. Licensed & Insured.</p>
+          <p>&copy; {new Date().getFullYear()} QuickLock Locksmiths. All rights reserved. Licensed & Insured.</p>
         </div>
       </div>
     </footer>
