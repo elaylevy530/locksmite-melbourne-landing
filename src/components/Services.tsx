@@ -17,7 +17,7 @@ const services = [
     description:
       "Home lock installation, repair, and rekeying services. We secure your home with quality locks.",
     badges: ["Same-day"],
-    bullets: ["Rekey & fresh installs", "Warranty on parts"],
+    bullets: ["Rekey & fresh installs"],
   },
   {
     icon: Shield,

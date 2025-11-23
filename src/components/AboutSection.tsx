@@ -8,7 +8,7 @@ interface Props {
 }
 
 const AboutSection = (props: Props) => {
-  const { yearsOfExperience = 15, companyName = 'Your local locksmith 24/7', city = 'Melbourne' } = props;
+  const { yearsOfExperience = 15, companyName = 'QuickLock locksmith 24/7', city = 'Melbourne' } = props;
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
