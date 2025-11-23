@@ -34,16 +34,27 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Payments & Hours</h3>
+            <h3 className="text-lg font-bold mb-4">Payment Options</h3>
             <div className="space-y-4 text-primary-foreground/80">
               <div>
-                <p className="text-sm font-semibold mb-2 md:mb-3">Accepted Payment Methods:</p>
+                <p className="text-sm font-semibold mb-2 md:mb-3">We're on call to assist you 24 hours a day, 365 days of the year.
+                  Payment Options
+                  We offer a convenient, mobile EFTPOS payment facility. We gladly accept:</p>
+                <div className="mt-3 mb-2 inline-block">
+                  <img 
+                    src="/צילום מסך 2025-11-23 153629.png"
+                    alt="Payment methods"
+                    className="max-w-[200px] md:max-w-md object-contain rounded-lg"
+                    style={{ 
+                      backgroundColor: 'transparent',
+                      display: 'block'
+                    }}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
                 <div className="flex flex-wrap items-center gap-2 text-xs md:text-sm">
-                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">Visa</span>
-                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">Mastercard</span>
-                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">Contactless</span>
-                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">Bank Transfer</span>
-                  <span className="inline-flex items-center gap-2 px-2 md:px-2.5 py-1 rounded-md bg-primary-foreground/10 text-primary-foreground whitespace-nowrap">EFTPOS</span>
+
                 </div>
               </div>
               <div className="space-y-2">
