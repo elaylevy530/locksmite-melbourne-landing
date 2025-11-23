@@ -74,9 +74,9 @@ const WhyChooseUs = () => {
         {/* Section CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Button asChild size="lg" className="bg-accent hover:bg-[hsl(var(--green-hover))] text-accent-foreground font-bold">
-            <a href="tel:0363161113" className="flex items-center gap-2" aria-label="Call now 03 6316 1113">
+            <a href="tel:0356150114" className="flex items-center gap-2" aria-label="Call now 03 5615 0114">
               <Phone className="h-5 w-5" />
-              Call Now: 03 6316 1113
+              Call Now: 03 5615 0114
             </a>
           </Button>
           <Button size="lg" className="font-semibold bg-primary-foreground text-primary hover:bg-primary-foreground/90 border-transparent" asChild>

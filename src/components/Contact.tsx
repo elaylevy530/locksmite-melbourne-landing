@@ -24,7 +24,7 @@ const Contact = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Call or message us for immediate assistance</p>
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button asChild size="lg" className="bg-accent hover:bg-green-hover text-accent-foreground font-bold">
-              <a href="tel:0363161113" aria-label="Call now 03 6316 1113">Call Now: 03 6316 1113</a>
+              <a href="tel:0356150114" aria-label="Call now 03 5615 0114">Call Now: 03 5615 0114</a>
             </Button>
 
           </div>
@@ -37,8 +37,8 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="font-bold text-lg text-foreground mb-2">Call Us</h3>
-              <a href="tel:0363161113" className="text-accent hover:text-green-hover font-semibold text-xl">
-                03 6316 1113
+              <a href="tel:0356150114" className="text-accent hover:text-green-hover font-semibold text-xl">
+                03 5615 0114
               </a>
               <p className="text-muted-foreground mt-1">Available 24/7 for emergencies</p>
             </div>
@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="font-bold text-lg text-foreground mb-2">Email Us</h3>
-              <a href="mailto:info@locksmite.com.au" className="text-accent hover:text-green-hover font-semibold">
+              <a href="mailto:quicklock770@gmail.com" className="text-accent hover:text-green-hover font-semibold">
                 quicklock770@gmail.com
               </a>
               <p className="text-muted-foreground mt-1">We'll respond within 24 hours</p>
@@ -79,9 +79,9 @@ const Contact = () => {
                 size="lg"
                 className="w-full bg-accent hover:bg-green-hover text-accent-foreground font-bold"
               >
-                <a href="tel:0363161113" className="flex items-center justify-center gap-2">
+                <a href="tel:0356150114" className="flex items-center justify-center gap-2">
                   <Phone className="h-5 w-5" />
-                  Call Now: 03 6316 1113
+                  Call Now: 03 5615 0114
                 </a>
               </Button>
             </CardContent>

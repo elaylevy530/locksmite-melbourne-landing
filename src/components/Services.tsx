@@ -109,8 +109,8 @@ const Services = () => {
         {/* Section CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Button asChild size="lg" className="bg-accent hover:bg-green-hover text-accent-foreground font-bold">
-            <a href="tel:0363161113" className="flex items-center gap-2" aria-label="Call now 03 6316 1113">
-              Call Now: 03 6316 1113
+            <a href="tel:0356150114" className="flex items-center gap-2" aria-label="Call now 03 5615 0114">
+              Call Now: 03 5615 0114
             </a>
           </Button>
           <Button onClick={scrollToContact} size="lg" variant="outline" className="font-semibold">

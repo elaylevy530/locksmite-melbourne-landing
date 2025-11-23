@@ -166,7 +166,7 @@ const AssociatedBrands = () => {
           </h3>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button asChild size="lg" className="bg-accent hover:bg-green-hover text-accent-foreground font-bold">
-              <a href="tel:0363161113" aria-label="Call now 03 6316 1113" className="flex items-center gap-2">
+              <a href="tel:0356150114" aria-label="Call now 03 5615 0114" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 03-6316-1113
               </a>

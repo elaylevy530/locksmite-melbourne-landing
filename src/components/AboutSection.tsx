@@ -65,7 +65,7 @@ const AboutSection = (props: Props) => {
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button asChild className="bg-accent hover:bg-green-hover text-accent-foreground font-bold">
-                  <a href="tel:0363161113" aria-label="Call now 03 6316 1113">Call Now</a>
+                  <a href="tel:0356150114" aria-label="Call now 03 5615 0114">Call Now</a>
                 </Button>
                 <Button onClick={scrollToContact} variant="outline" className="font-semibold">Get a Quote</Button>
               </div>

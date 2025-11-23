@@ -40,8 +40,8 @@ const Navigation = () => {
               className="h-11 w-11 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground shrink-0 ml-12"
             >
               <a 
-                href="tel:0363161113" 
-                aria-label="התקשר עכשיו 03 6316 1113" 
+                href="tel:0356150114" 
+                aria-label="התקשר עכשיו 03 5615 0114" 
                 className="flex items-center justify-center"
               >
                 <Phone className="h-5 w-5" />
@@ -88,8 +88,8 @@ const Navigation = () => {
               className="h-11 w-11 sm:h-12 sm:w-12 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground"
             >
               <a 
-                href="tel:0363161113" 
-                aria-label="התקשר עכשיו 03 6316 1113" 
+                href="tel:0356150114" 
+                aria-label="התקשר עכשיו 03 5615 0114" 
                 className="flex items-center justify-center"
               >
                 <Phone className="h-5 w-5" />

@@ -18,13 +18,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Info</h3>
             <div className="space-y-3">
-              <a href="tel:0363161113" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
+              <a href="tel:0356150114" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
                 <Phone className="h-4 w-4" />
-                <span>03 6316 1113</span>
+                <span>03 5615 0114</span>
               </a>
-              <a href="mailto:info@locksmite.com.au" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
+              <a href="mailto:quicklock770@gmail.com" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
                 <Mail className="h-4 w-4" />
-                <span>info@locksmite.com.au</span>
+                <span>quicklock770@gmail.com</span>
               </a>
               <div className="flex items-center gap-2 text-primary-foreground/80">
                 <MapPin className="h-4 w-4" />

@@ -32,8 +32,8 @@ const Index = () => {
 
       <div className="fixed right-4 bottom-[calc(env(safe-area-inset-bottom)+1rem)] z-50 sm:hidden">
         <a
-          href="tel:0363161113"
-          aria-label="התקשר עכשיו 03 6316 1113"
+          href="tel:0356150114"
+          aria-label="התקשר עכשיו 03 5615 0114"
           className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-[var(--shadow-hover)] hover:bg-[hsl(var(--green-hover))] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <Phone className="h-6 w-6" />

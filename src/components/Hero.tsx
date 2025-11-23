@@ -77,9 +77,9 @@ const Hero = () => {
               size="lg"
               className="bg-accent hover:bg-green-hover text-accent-foreground font-bold text-base md:text-lg h-12 md:h-14 px-6 md:px-8"
             >
-              <a href="tel:0363161113" className="flex items-center gap-2 md:gap-3">
+              <a href="tel:0356150114" className="flex items-center gap-2 md:gap-3">
                 <Phone className="h-5 w-5 md:h-6 md:w-6" />
-                Call Now: 03 6316 1113
+                Call Now: 03 5615 0114
               </a>
             </Button>
           </div>
