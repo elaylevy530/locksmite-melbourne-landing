@@ -51,9 +51,9 @@ const Navigation = () => {
         </div>
 
         {/* Desktop / tablet: full header */}
-        <div className="hidden sm:flex items-center justify-between gap-2 md:gap-4 py-2">
+        <div className="hidden sm:flex items-center justify-center gap-10 md:gap-20 py-1.5">
           {/* Left: logo + text */}
-          <div className="flex items-center gap-1.5 md:gap-2">
+          <div className="flex items-center gap-2 md:gap-3">
             <div className="hidden md:flex items-center gap-1.5" aria-hidden="true">
               <Lock className="h-8 w-8 text-gray-800 stroke-[1.5]" />
               <ShieldCheck className="h-8 w-8 text-gray-800 stroke-[1.5]" />
@@ -66,26 +66,26 @@ const Navigation = () => {
           </div>
 
           {/* Right: Google reviews + status + call button */}
-          <div className="flex items-center gap-2 md:gap-3">
-            <div className="hidden lg:flex items-center">
+          <div className="flex items-center gap-3 md:gap-4">
+            <div className="hidden lg:flex items-center mr-5 md:mr-7">
               <img 
                 src="/צילום מסך 2025-11-13 152515.png" 
                 alt="Google Reviews" 
-                className="h-20 object-contain"
+                className="h-16 xl:h-18 object-contain"
               />
             </div>
             
             <div
-              className="flex items-center rounded-full bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 text-[11px] font-medium sm:px-2.5 sm:py-1 sm:text-xs shrink-0"
+              className="flex items-center rounded-full bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 text-[11px] font-medium sm:px-2 sm:py-0.5 sm:text-xs shrink-0"
               aria-label="Open now"
             >
-              <span className="h-2 w-2 rounded-full bg-green-500 mr-2" aria-hidden="true" />
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500 mr-1.5" aria-hidden="true" />
               Open Now
             </div>
             
             <Button 
               asChild
-              className="h-11 w-11 sm:h-12 sm:w-12 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground"
+              className="h-10 w-10 sm:h-11 sm:w-11 rounded-full p-0 bg-accent hover:bg-green-hover text-accent-foreground ml-12 md:ml-16"
             >
               <a 
                 href="tel:0356150114" 

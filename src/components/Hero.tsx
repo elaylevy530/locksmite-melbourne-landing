@@ -28,32 +28,6 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 w-full">
-        <header className="absolute top-20 md:top-24 lg:top-28 left-0 right-0 flex items-center justify-center px-4 sm:px-8 py-2">
-          <nav className="hidden lg:flex items-center gap-6 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
-            {navItems.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(item.id);
-                }}
-                className="text-white hover:text-accent transition-colors text-sm font-medium"
-              >
-                {item.label}
-              </a>
-            ))}
-            <button aria-label="Search" className="text-white hover:text-accent transition-colors">
-              <Search className="w-5 h-5" />
-            </button>
-            <Button
-              onClick={scrollToContact}
-              className="bg-accent hover:bg-green-hover text-accent-foreground px-6 py-2 font-medium"
-            >
-              Get A Quote
-            </Button>
-          </nav>
-        </header>
       
       <div className="container mx-auto px-4 sm:px-8 py-8 md:py-16 lg:py-24">
         <div className="max-w-4xl">
