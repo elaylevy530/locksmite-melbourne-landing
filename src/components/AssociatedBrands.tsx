@@ -168,7 +168,7 @@ const AssociatedBrands = () => {
             <Button asChild size="lg" className="bg-accent hover:bg-green-hover text-accent-foreground font-bold">
               <a href="tel:0356150114" aria-label="Call now 03 5615 0114" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
-                03-6316-1113
+               0356150114
               </a>
             </Button>
             <Button onClick={scrollToContact} size="lg" variant="outline" className="font-semibold">
